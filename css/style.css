@@ -1,0 +1,654 @@
+body, header, div, nav, ul, li, h1, input, section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 16px;
+}
+body{
+    background-color:#D5E2F2 ;
+}
+h1{
+    margin-left: 60px;
+}
+
+/*---------- FOOTER PC ----------*/
+.contenedor__icono, .box__cheac label{
+    display: flex;
+    height: 30%;
+    width: 40px;
+    margin: 0px 27px;
+}
+.icono__footer{
+    width: 65%;
+}
+.icono__footer-menu{
+    width: 30px;
+    height: 30px;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%; 
+    background-color: #A0BBF2;
+    color: #fff;
+    font-size: 20px;
+    padding:30px 0 ;
+}
+.nav__footer{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.lista__nav-footer{
+display: flex;
+}
+/*---------- HEADER PC ----------*/
+.box__header{
+    background-color: #1A2440;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor1-header, .contenedor2-header{
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+}
+.box__cheac input{
+position: absolute ;
+right: 0;
+}
+.box__cheac label{
+    display: block;
+    margin-top: 15px;
+}
+.lista__header1{
+    display: flex;
+    flex-direction: row;
+}
+.box__search input{
+    background-color:#eef ;
+    width: 100%;
+    height: 35px;
+}
+.box__search{
+    width: 300px;
+    position: relative;
+}
+.box__search button{
+    position: absolute;
+    right: 0;
+    height: 31px;
+    width: 40px;
+    margin: 2px 2px;
+    border: none;
+    border-left:solid 2px #5576D9;
+}
+.input__salir{
+    width:100%;
+    height: 100%;
+}
+.box__salir{
+    position: absolute;
+    right: 0;
+    margin: 20px 50px 0 0;
+    font-size: 1.6em;
+    color:#fff ;
+    transition: 0.1s;
+}
+.box__salir:hover{
+color:#25D952;
+}
+
+.nav__header{
+    background-color: #5576D9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.lista__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    font-size: 1.4em;
+}
+.item__list-header a{
+    color:#D5E2F2;
+    font-size: 1.5em;
+}
+.item__list-header a:hover{
+    text-decoration: underline;
+}
+.box__nav-header{
+    background-color:rgba(0, 0, 0, 0.679);
+    width: 100%;
+    height:100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    font-size: 16px; /* para combiar el tamaño del nav y la X*/
+    
+}
+.input-h{
+    display: none;
+}
+.input-h:checked ~ .box__nav-header{
+    display:block;
+}
+.buton-salir{
+    position:relative;
+    width: 30%;
+    height: 100%;
+}
+.icono-mobile{
+    display: none;
+}
+
+/*---------- HEADER MOBILE ----------*/
+@media (min-width: 300px)and (max-width:800px){
+.box__header{
+    height: 90px;
+}
+.box__header{
+    width: 100%;
+}
+.nav__header{
+    width: 100vw;
+    height: 100vh;
+}
+.contenedor2-header .box__search{
+display: none;
+}
+.icono-mobile{
+    display: block;
+}
+.contenedor2-header{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+}
+.contenedor2-header .contenedor__icono{
+    margin: 5px;
+}
+h1{
+    margin-left: 15px;
+}
+.box__header{
+    position: sticky;
+}
+.buton-salir{
+    height: 100vh;
+    width: 100vw;
+}
+.contenedor__iconomenu{
+    display: flex;
+    margin: auto;
+}
+}
+/*--------- 1RA SECCION INDEX PC ----------*/
+.seccion__principal{
+    width: 80%;
+    height: 89vh;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-template-areas: 
+    "oferta oferta"
+    "hombre mujer";
+}
+.oferta{
+    grid-area: oferta;
+}
+.hombre{
+    grid-area: hombre;
+}
+.muejer{
+    grid-area: mujer;
+}
+.contenedor__imagen{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.seccion__principal .oferta img{
+    height: 320px;
+}
+.contenedor__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 1.4em;
+    margin-bottom:10px;
+}
+.contenedor__link a:hover{
+    text-decoration: underline;
+}
+.contenedor__link a{
+    color: #eef;
+}
+.oferta img{
+    width: 100px;
+    height: 460px;
+}
+.contenedor__imagen{
+    background-image: url(https://th.bing.com/th/id/OIP.NEgE1Wa75Q6Py0yPJ1DEnwHaIB?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*---------- PRIMERA SECCION INDEX TELEFONO ----------*/
+@media (min-width: 300px) and  (max-width: 837px){
+    .seccion__principal {
+        width: 100%;
+        height: 900px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,300px);
+        grid-template-areas: 
+        "oferta"
+        "hombre"
+        "mujer";
+
+    }
+    .oferta img{
+        height: 50px;
+    }
+}
+
+/*---------- SEGUNDA SECCION INDEX PC ----------*/
+.seccion__inf{
+    width: 60%;
+    margin: 20px auto;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+.seccion__inf h3{
+    color: #5576D9;
+}
+.seccion__inf p{
+    text-align:justify;
+    line-height: 1.5;
+}
+
+.seccion__inf-sobrenosotros, .seccion__inf-ayuda form{
+    margin-top: 50px;
+}
+/*---------- SEGUNDA SECCION INDEX TELEFONO ----------*/
+
+@media (min-width: 300px) and  (max-width: 837px){
+    .seccion__inf{
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+}
+
+/*---------- FORMULARIO INICIAR SESION REGISTRARSE ----------*/
+.formulario{
+    margin:10px auto;
+    width: 80%;
+    padding: 12px 0px;
+    line-height: 1.6em;
+    display: flex;
+    flex-direction:column ;
+    border-radius: 5px;
+}
+form > h2{
+    margin:0;
+    text-align: center;
+    grid-column-start:1 ;
+    grid-column-end: span 2;
+}
+form > div{
+    width: 60%;margin: auto;
+}
+div > input{
+    width: 100%;
+    padding: 5px;
+    border-radius:5px ;
+
+}
+textarea{
+    min-width:100%;
+    resize: vertical;
+    min-height: 102px;
+    font-family: inherit;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor__submit{
+    width: 24%;
+    margin-top: 4px;
+}
+.texto__form{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 20px;
+}
+.box__nombre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6px;
+}
+.iniciar-sesion, .registrarse{
+    width:50vw ;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.iniciar-sesion{
+    margin-bottom: 90px;
+}
+.box__form{
+    height: 750px;
+}
+/*---------- FORMULARIO INICIAR SESION REGISTRARSE ----------*/
+
+@media (min-width: 300px) and  (max-width: 837px){
+    
+    .iniciar-sesion, .registrarse{
+        width: 100vw;
+        height: 80vh;
+        font-size: 17px;
+    }
+    .iniciar-sesion a, .registrarse a{
+        font-size: 0.9em;
+        color: #5576D9;
+        text-decoration: underline;
+    }
+    .formulario, .formulario div{
+        width: 98%;
+        border: none;
+    }
+    .contenedor__submit{
+        text-align: center;
+        margin-top:10px ;
+    }
+    .contenedor__submit input{
+        width: 60%;
+    }
+    .box__nombre{
+        display: flex;
+        flex-direction: column;
+    }
+    .box__form{
+        height: 1000px;
+    }
+    .iniciar-sesion{
+        margin: -100px 0;
+    }
+}
+
+/*---------- PRIMERA SELECCION HOMBRE/MUJER----------*/
+.seccion__categorias, .seleccion__articulo{
+    width: 80%;
+    margin: auto;
+    display: grid; 
+    grid-template-columns:repeat(auto-fill, minmax(330px,2fr));
+    grid-auto-rows: 450px;
+    gap:10px;
+    padding-top: 10px;
+}
+.seleccion__articulo{
+    padding-top: 100px;
+}
+.grid__item{
+    border: 2px solid rgb(188, 187, 187);
+    border-radius: 10px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+div>a{
+    color: #000;
+}
+
+.imagenArticulos{
+    width: 80%;
+    height: 330px;
+    border-radius:20px ;
+}
+
+.conteiner__informacion{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    line-height: 1.5em;
+}
+/*---------- PRIMERA SELECCION MOBILE HOMBRE/MUJER ----------*/
+@media (min-width: 300px) and  (max-width: 837px){
+    .seccion__categorias, .seleccion__articulo{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(345px ,1fr));
+        width: 100%;
+        grid-auto-rows: 280px;
+    }
+    .seleccion__articulo{
+        padding-top: 0;
+    }
+    .seccion__categorias .imagenArticulos , .seleccion__articulo .imagenArticulos{
+        height: 140px;
+        min-width:350px;
+        max-width: 360px;
+    }
+    .seccion__categorias .grid__item{
+        height: 180px;
+        border: none;
+    }
+}
+.seleccion__articulo .grid__item{
+    height: 265px;
+    border: none;
+}
+
+/*---------- SELECCION DE PRODUCTO COMPRA ----------*/
+.box__compra{
+    margin:auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imagen__compra{
+    height: 500px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.imagen__compra img{
+    width: 100%;
+    height:400px;
+    border-radius:20px ;
+}
+.informacion__compra{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7em;
+}
+.informacion__compra > h4+div{
+    display: flex;
+    flex-direction: column;
+}
+.informacion__compra > h4+div+div>ol{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.informacion__compra > h4+div+div>ol li{
+    margin:0px 20px;
+}
+.informacion__compra > h4+div+div+div{
+    align-self: center;
+}
+.informacion__compra > h4+div+div+div>input{
+    height: 25px;
+    width: 50px;
+    margin: 0px 20px;
+}
+.productos__relacionados{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px, 1fr));
+}
+.productos__relacionados img{
+    width: 80%;
+}
+.productos__relacionados .box__productos{
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box__productos a img{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+/*---------- SELECCION DE PRODUCTO  COMPRA MOBILE  ----------*/
+@media (min-width: 300px) and  (max-width: 837px){
+    .box__compra{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/*---------- SELECCION COMBOS U OFERTAS  ----------*/
+.seccion__combos{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.seccion__combos img{
+    width: 100%;
+    height: 300px;
+}
+.grid__item-combos .contenedor__imagen-combos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+}
+.contenedor__imagen-combos a{
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    margin-right: 20px;
+}
+.contenedor__imagen-combos a +div{
+    margin: auto;
+}
+.seccion__combos > :nth-child(2n){ 
+    direction: rtl;
+    text-align: end;
+}
+/*---------- SELECCION COMBOS U OFERTAS TELEFONO ----------*/
+@media (min-width: 300px) and  (max-width: 837px){
+    .seccion__combos{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .grid__item-combos .contenedor__imagen-combos{
+        display: grid;
+        grid-template-columns:1fr;
+        padding: 20px;
+    }
+}
+
+/*---------- SELECCION TARJETAS PARA REGALO ----------*/
+.sec__tar{
+    display: grid;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3 ,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "card1 card1 card1 "
+    "card2 card2 card3 "
+    "card2 card2 card4 ";
+}
+.seccion__tarjetas{
+    text-align: center;
+}
+.sec__tar a{
+    color: #25D952;
+}
+
+.contenedor__imagen-tarjeta> div  {
+    border: solid 1px white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.contenedor__imagen-tarjeta{
+    background-image: url(https://th.bing.com/th/id/OIP.Bs6csK4brRFCSWl4yAKl_wHaFY?rs=1&pid=ImgDetMain);
+    border: #000 1px solid;
+    width: 100%;
+    height: 100%;
+}
+.sec__tar  :first-child {
+    grid-area: card1;
+}
+.sec__tar :nth-child(2){
+    grid-area: card2;    
+}
+.sec__tar :nth-child(3){
+    grid-area: card3;
+}
+.sec__tar :last-child{
+    grid-area: card4;
+}
+.sec__tar :first-child,.sec__tar :nth-child(2),.sec__tar :nth-child(3),.sec__tar :last-child{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+/*---------- SELECCION tarjetas de regalo telefono ----------*/
+@media (min-width: 300px) and  (max-width: 837px){
+    .sec__tar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .grid__item-tarjetas{
+        height: 500px;
+    }
+}
